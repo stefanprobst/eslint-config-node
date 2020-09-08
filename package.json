@@ -1,7 +1,7 @@
 {
   "name": "@stefanprobst/eslint-config-node",
   "version": "1.0.1",
-  "main": ".eslintrc.js",
+  "main": "eslintrc.js",
   "repository": "git@github.com:stefanprobst/eslint-config-node.git",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
   "license": "MIT"
