@@ -15,6 +15,13 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   rules: {
+    "no-restricted-globals": [
+      "error",
+      {
+        name: "isNaN",
+        message: "Use Number.isNaN instead.",
+      },
+    ],
     "import/order": [
       "error",
       { alphabetize: { order: "asc", caseInsensitive: true } },
