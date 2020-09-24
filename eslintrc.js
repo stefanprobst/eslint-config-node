@@ -31,4 +31,31 @@ module.exports = {
     "node/prefer-global/url-search-params": ["warn"],
     "node/prefer-promises/fs": ["warn"],
   },
+  overrides: [
+    {
+      files: ["*.ts"],
+      extends: [
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+      ],
+      settings: {
+        "import/resolver": {
+          typescript: {
+            project: "./tsconfig.json",
+          },
+        },
+        node: {
+          tryExtensions: [".js", ".json", ".node", ".ts"],
+        },
+      },
+      rules: {
+        "node/no-unsupported-features/es-syntax": [
+          "error",
+          {
+            ignores: ["modules"],
+          },
+        ],
+      },
+    },
+  ],
 };
