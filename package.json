@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/eslint-config-node",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "eslintrc.js",
   "repository": "git@github.com:stefanprobst/eslint-config-node.git",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
@@ -12,7 +12,8 @@
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.4.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-node": "^11.1.0",
+    "typescript": "^4.3.5"
   },
   "peerDependencies": {
     "eslint": ">=7.31.0"
