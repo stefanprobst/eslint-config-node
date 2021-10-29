@@ -2,14 +2,11 @@ module.exports = {
   root: true,
   env: {
     es2020: true,
-    "jest/globals": true,
     node: true,
   },
   extends: [
     "eslint:recommended",
     "plugin:import/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
     "plugin:node/recommended",
     "prettier",
   ],
@@ -62,6 +59,9 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
       ],
+      parserOptions: {
+        project: "./tsconfig.json",
+      },
       settings: {
         "import/resolver": {
           typescript: {
@@ -80,6 +80,7 @@ module.exports = {
             default: "generic",
           },
         ],
+        "@typescript-eslint/consistent-type-exports": "error",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/naming-convention": "warn",
         "@typescript-eslint/no-unnecessary-condition": "error",
@@ -113,6 +114,10 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      files: ["*.test.ts", "*.test.js"],
+      extends: ["plugin:jest/recommended", "plugin:jest/style"],
     },
   ],
 };
