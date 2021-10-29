@@ -4,6 +4,9 @@
   "main": "eslintrc.js",
   "repository": "git@github.com:stefanprobst/eslint-config-node.git",
   "license": "MIT",
+  "files": [
+    "eslintrc.js"
+  ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
